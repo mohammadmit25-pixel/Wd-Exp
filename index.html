@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeMaster Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Fira+Code:wght@600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top px-4">
+  <a class="navbar-brand logo-text" href="#">Code<span>Master</span></a>
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav mx-auto gap-1">
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#dashboard">🏠 Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#courses">📚 Courses</a></li>
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#videos">🎬 Videos</a></li>
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#assignments">📝 Assignments</a></li>
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#leaderboard">🏆 Leaderboard</a></li>
+      <li class="nav-item"><a class="nav-link px-3 py-2" href="#settings">⚙️ Settings</a></li>
+    </ul>
+    <div class="d-flex align-items-center gap-2">
+      <div class="nav-av text-white">M</div>
+      <div>
+        <div style="font-size:0.82rem;font-weight:800;">Mohammad</div>
+        <div style="font-size:0.68rem;color:var(--muted);">IT Sem II</div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">🚀 India's #1 Coding Platform</div>
+  <h1 class="mb-3">Learn to Code.<br><span class="grad">Build Your Future.</span></h1>
+  <p class="mb-4" style="color:var(--muted);max-width:480px;margin:0 auto 24px;">Expert-led courses, live classes & real projects — everything to become a developer.</p>
+  <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="#courses" class="btn btn-glow">🎯 Explore Courses</a>
+    <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank" class="btn btn-out">▶ Watch Free Demo</a>
+  </div>
+</div>
+
+<div class="container py-4">
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="sec-title">📊 Dashboard</div>
+  <div class="row g-3 mb-5">
+    <div class="col-6 col-md-3">
+      <div class="card-dark p-4 fade-up" style="animation-delay:0.05s">
+        <div class="stat-top mb-3" style="background:linear-gradient(90deg,var(--accent),var(--cyan))"></div>
+        <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;">Enrolled Courses</div>
+        <div class="stat-val">6</div>
+        <div style="font-size:0.72rem;color:var(--muted);">2 completed</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card-dark p-4 fade-up" style="animation-delay:0.1s">
+        <div class="stat-top mb-3" style="background:linear-gradient(90deg,var(--green),var(--cyan))"></div>
+        <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;">Avg Progress</div>
+        <div class="stat-val">45%</div>
+        <div style="font-size:0.72rem;color:var(--muted);">Keep going!</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card-dark p-4 fade-up" style="animation-delay:0.15s">
+        <div class="stat-top mb-3" style="background:linear-gradient(90deg,var(--yellow),var(--pink))"></div>
+        <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;">Deadlines Soon</div>
+        <div class="stat-val">3</div>
+        <div style="font-size:0.72rem;color:var(--muted);">Within 7 days</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card-dark p-4 fade-up" style="animation-delay:0.2s">
+        <div class="stat-top mb-3" style="background:linear-gradient(90deg,var(--pink),var(--accent))"></div>
+        <div style="font-size:0.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;">XP Points</div>
+        <div class="stat-val">2480</div>
+        <div style="font-size:0.72rem;color:var(--muted);">Gold Coder 🥇</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COURSES -->
+  <div id="courses" class="sec-title">📚 My Enrolled Courses</div>
+  <div class="row g-3 mb-5">
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.08s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#ff6b35,#ff6b3533)">🌐
+          <span class="cbadge" style="background:rgba(255,214,0,0.2);color:#ffd600;border:1px solid rgba(255,214,0,0.4)">⭐ Popular</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">HTML &amp; CSS Mastery</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👨‍🏫 Prof. Sharma</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>78%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:78%;background:linear-gradient(90deg,var(--accent),var(--cyan))"></div></div>
+          <progress value="78" max="100" style="display:none">78%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>18/23 lessons</span><span>🔥 5-day streak</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.14s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#ffd600,#ffd60033)">⚡
+          <span class="cbadge" style="background:rgba(255,23,68,0.2);color:#ff1744;border:1px solid rgba(255,23,68,0.4)">🔴 Live</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">JavaScript Fundamentals</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👩‍🏫 Prof. Mehra</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>54%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:54%;background:linear-gradient(90deg,var(--yellow),var(--pink))"></div></div>
+          <progress value="54" max="100" style="display:none">54%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>13/24 lessons</span><span>📅 Apr 20</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.2s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#00e5ff,#00e5ff33)">🐍
+          <span class="cbadge" style="background:rgba(0,230,118,0.2);color:#00e676;border:1px solid rgba(0,230,118,0.4)">✨ New</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">Python for Beginners</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👨‍🏫 Prof. Iyer</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>22%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:22%;background:linear-gradient(90deg,var(--cyan),var(--green))"></div></div>
+          <progress value="22" max="100" style="display:none">22%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>5/22 lessons</span><span>📅 May 5</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.26s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#00e676,#00e67633)">⚛️
+          <span class="cbadge" style="background:rgba(0,230,118,0.2);color:#00e676;border:1px solid rgba(0,230,118,0.4)">✨ New</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">React.js Basics</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👩‍🏫 Prof. Nair</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>10%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:10%;background:linear-gradient(90deg,var(--green),var(--cyan))"></div></div>
+          <progress value="10" max="100" style="display:none">10%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>2/20 lessons</span><span>📅 May 18</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.32s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#aa00ff,#aa00ff33)">🗄️
+          <span class="cbadge" style="background:rgba(255,214,0,0.2);color:#ffd600;border:1px solid rgba(255,214,0,0.4)">⭐ Popular</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">Database Design (SQL)</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👨‍🏫 Prof. Khan</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>65%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:65%;background:linear-gradient(90deg,var(--accent),var(--pink))"></div></div>
+          <progress value="65" max="100" style="display:none">65%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>13/20 lessons</span><span>⏸ Paused</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card-dark fade-up" style="animation-delay:0.38s">
+        <div class="cthumb" style="background:linear-gradient(135deg,#ff1744,#ff174433)">🧠
+          <span class="cbadge" style="background:rgba(255,23,68,0.2);color:#ff1744;border:1px solid rgba(255,23,68,0.4)">🔴 Live</span>
+        </div>
+        <div class="p-3">
+          <div style="font-weight:800;font-size:0.9rem;">Data Structures &amp; Algo</div>
+          <div style="font-size:0.72rem;color:var(--muted);" class="mb-2">👩‍🏫 Prof. Reddy</div>
+          <div class="d-flex justify-content-between" style="font-size:0.7rem;color:var(--muted);margin-bottom:5px;"><span>Progress</span><span>41%</span></div>
+          <div class="prog-track mb-2"><div class="prog-fill" style="width:41%;background:linear-gradient(90deg,var(--yellow),var(--pink))"></div></div>
+          <progress value="41" max="100" style="display:none">41%</progress>
+          <div class="d-flex justify-content-between" style="font-size:0.68rem;color:var(--muted);"><span>9/22 lessons</span><span>📅 Apr 30</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DEADLINES + RECENT VIDEOS -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-6">
+      <div class="card-dark p-4 h-100">
+        <div class="sec-title">⏰ Upcoming Deadlines</div>
+        <div class="dl-item"><span>🔴</span><div><div style="font-weight:700;font-size:0.82rem;">JS Arrays Assignment</div><div style="font-size:0.68rem;color:var(--muted);">JavaScript Fundamentals</div></div><span class="ms-auto badge" style="background:rgba(255,23,68,0.15);color:#ff1744;">Tomorrow</span></div>
+        <div class="dl-item"><span>🔴</span><div><div style="font-weight:700;font-size:0.82rem;">CSS Grid Challenge</div><div style="font-size:0.68rem;color:var(--muted);">HTML &amp; CSS Mastery</div></div><span class="ms-auto badge" style="background:rgba(255,23,68,0.15);color:#ff1744;">Apr 7</span></div>
+        <div class="dl-item"><span>🟡</span><div><div style="font-weight:700;font-size:0.82rem;">DSA Sorting Quiz</div><div style="font-size:0.68rem;color:var(--muted);">Data Structures</div></div><span class="ms-auto badge" style="background:rgba(255,214,0,0.15);color:#ffd600;">Apr 10</span></div>
+        <div class="dl-item"><span>🟢</span><div><div style="font-weight:700;font-size:0.82rem;">SQL Joins Project</div><div style="font-size:0.68rem;color:var(--muted);">Database Design</div></div><span class="ms-auto badge" style="background:rgba(0,230,118,0.15);color:#00e676;">Apr 20</span></div>
+        <div class="dl-item"><span>🟢</span><div><div style="font-weight:700;font-size:0.82rem;">Python Functions Lab</div><div style="font-size:0.68rem;color:var(--muted);">Python for Beginners</div></div><span class="ms-auto badge" style="background:rgba(0,230,118,0.15);color:#00e676;">May 5</span></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-dark p-4 h-100">
+        <div class="sec-title">🎬 Recent Lectures</div>
+        <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" target="_blank" class="lec-card mb-2">
+          <div class="lec-icon" style="background:linear-gradient(135deg,#ffd60033,#ffd600)">⚡</div>
+          <div><div style="font-size:0.8rem;font-weight:800;">JS: Closures &amp; Scope</div><div style="font-size:0.67rem;color:var(--muted);">JavaScript • 14:32 min</div></div>
+          <div class="lec-arrow">↗</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank" class="lec-card mb-2">
+          <div class="lec-icon" style="background:linear-gradient(135deg,#6c63ff33,#6c63ff)">🌐</div>
+          <div><div style="font-size:0.8rem;font-weight:800;">CSS Flexbox Deep Dive</div><div style="font-size:0.67rem;color:var(--muted);">HTML &amp; CSS • 21:05 min</div></div>
+          <div class="lec-arrow">↗</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=8hly31xKli0" target="_blank" class="lec-card mb-2">
+          <div class="lec-icon" style="background:linear-gradient(135deg,#ff174433,#ff1744)">🧠</div>
+          <div><div style="font-size:0.8rem;font-weight:800;">Binary Search Explained</div><div style="font-size:0.67rem;color:var(--muted);">DSA • 18:20 min</div></div>
+          <div class="lec-arrow">↗</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank" class="lec-card">
+          <div class="lec-icon" style="background:linear-gradient(135deg,#00e67633,#00e676)">🐍</div>
+          <div><div style="font-size:0.8rem;font-weight:800;">Python: Lists &amp; Tuples</div><div style="font-size:0.67rem;color:var(--muted);">Python • 11:47 min</div></div>
+          <div class="lec-arrow">↗</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIDEO PLAYER -->
+  <div id="videos" class="sec-title">▶ Lecture Player</div>
+  <div class="video-wrap mb-2">
+    <video controls width="100%"
+      poster="https://placehold.co/1060x340/08090f/6c63ff?text=CodeMaster+Academy">
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      <track kind="subtitles" src="captions.vtt" srclang="en" label="English" default>
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <p style="font-size:0.73rem;color:var(--muted);" class="mb-5">📌 <strong style="color:#f0f2ff;">Now Playing:</strong> Introduction to Web Designing — Lecture 01 &nbsp;|&nbsp; Subtitles via HTML5 &lt;track&gt;</p>
+
+  <!-- ALL LECTURE LINKS -->
+  <div class="sec-title">📋 All Lecture Links</div>
+  <div class="row g-3 mb-5">
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#ff6b3533,#ff6b35)">🌐</div><div><div style="font-size:0.82rem;font-weight:800;">HTML &amp; CSS Full Course</div><div style="font-size:0.68rem;color:var(--muted);">freeCodeCamp • 6 hrs</div></div><div class="lec-arrow">↗</div></a></div>
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=W6NZfCO5SIk" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#ffd60033,#ffd600)">⚡</div><div><div style="font-size:0.82rem;font-weight:800;">JavaScript Full Course</div><div style="font-size:0.68rem;color:var(--muted);">Mosh • 1 hr</div></div><div class="lec-arrow">↗</div></a></div>
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#00e5ff33,#00e5ff)">🐍</div><div><div style="font-size:0.82rem;font-weight:800;">Python for Beginners</div><div style="font-size:0.68rem;color:var(--muted);">Mosh • 6 hrs</div></div><div class="lec-arrow">↗</div></a></div>
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=bMknfKXIFA8" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#00e67633,#00e676)">⚛️</div><div><div style="font-size:0.82rem;font-weight:800;">React.js Full Course</div><div style="font-size:0.68rem;color:var(--muted);">freeCodeCamp • 8 hrs</div></div><div class="lec-arrow">↗</div></a></div>
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#aa00ff33,#aa00ff)">🗄️</div><div><div style="font-size:0.82rem;font-weight:800;">SQL Full Course</div><div style="font-size:0.68rem;color:var(--muted);">freeCodeCamp • 4 hrs</div></div><div class="lec-arrow">↗</div></a></div>
+    <div class="col-12 col-md-4"><a class="lec-card" href="https://www.youtube.com/watch?v=8hly31xKli0" target="_blank"><div class="lec-icon" style="background:linear-gradient(135deg,#ff174433,#ff1744)">🧠</div><div><div style="font-size:0.82rem;font-weight:800;">Data Structures &amp; Algo</div><div style="font-size:0.68rem;color:var(--muted);">freeCodeCamp • 2 hrs</div></div><div class="lec-arrow">↗</div></a></div>
+  </div>
+
+  <!-- ASSIGNMENTS -->
+  <div id="assignments" class="sec-title">📝 Assignments</div>
+  <div class="card-dark p-3 mb-5">
+    <table class="table table-borderless mb-0" style="color:#f0f2ff;font-size:0.82rem;">
+      <thead><tr style="color:var(--muted);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.07em;border-bottom:1px solid var(--border);">
+        <th>#</th><th>Assignment</th><th>Course</th><th>Due</th><th>Status</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>1</td><td>JS Arrays Practice</td><td>JavaScript</td><td>Apr 6</td><td><span class="badge" style="background:rgba(255,214,0,0.15);color:#ffd600;">Pending</span></td></tr>
+        <tr><td>2</td><td>CSS Grid Challenge</td><td>HTML &amp; CSS</td><td>Apr 7</td><td><span class="badge" style="background:rgba(255,214,0,0.15);color:#ffd600;">Pending</span></td></tr>
+        <tr><td>3</td><td>DSA Sorting Quiz</td><td>Data Structures</td><td>Apr 10</td><td><span class="badge" style="background:rgba(255,214,0,0.15);color:#ffd600;">Pending</span></td></tr>
+        <tr><td>4</td><td>Flexbox Layout Task</td><td>HTML &amp; CSS</td><td>Mar 30</td><td><span class="badge" style="background:rgba(0,230,118,0.15);color:#00e676;">Submitted</span></td></tr>
+        <tr><td>5</td><td>Variables &amp; Loops</td><td>Python</td><td>Mar 25</td><td><span class="badge" style="background:rgba(0,230,118,0.15);color:#00e676;">Submitted</span></td></tr>
+        <tr><td>6</td><td>Array Traversal</td><td>Data Structures</td><td>Mar 20</td><td><span class="badge" style="background:rgba(255,23,68,0.15);color:#ff1744;">Overdue</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LEADERBOARD -->
+  <div id="leaderboard" class="sec-title">🏆 Leaderboard</div>
+  <div class="mb-5" style="max-width:600px;">
+    <div class="lb-row"><span style="color:#ffd600;font-weight:900;width:24px;">1</span><div class="lb-av" style="background:linear-gradient(135deg,#ffd600,#ff6d00);">A</div><div><div style="font-weight:800;font-size:0.85rem;">Aryan Deshmukh</div><div style="font-size:0.7rem;color:var(--muted);">IT • 12 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">3840 XP</span></div>
+    <div class="lb-row"><span style="color:silver;font-weight:900;width:24px;">2</span><div class="lb-av" style="background:linear-gradient(135deg,#b0bec5,#78909c);">P</div><div><div style="font-weight:800;font-size:0.85rem;">Priya Kulkarni</div><div style="font-size:0.7rem;color:var(--muted);">IT • 10 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">3210 XP</span></div>
+    <div class="lb-row"><span style="color:#cd7f32;font-weight:900;width:24px;">3</span><div class="lb-av" style="background:linear-gradient(135deg,#cd7f32,#a0522d);">R</div><div><div style="font-weight:800;font-size:0.85rem;">Rohan Sharma</div><div style="font-size:0.7rem;color:var(--muted);">IT • 9 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">2950 XP</span></div>
+    <div class="lb-row"><span style="color:var(--muted);font-weight:900;width:24px;">4</span><div class="lb-av" style="background:linear-gradient(135deg,#00e5ff,#6c63ff);">S</div><div><div style="font-weight:800;font-size:0.85rem;">Sneha Joshi</div><div style="font-size:0.7rem;color:var(--muted);">IT • 8 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">2710 XP</span></div>
+    <div class="lb-row me"><span style="color:var(--accent);font-weight:900;width:24px;">5</span><div class="lb-av" style="background:linear-gradient(135deg,var(--accent),var(--pink));">M</div><div><div style="font-weight:800;font-size:0.85rem;">Mohammad (You) ⭐</div><div style="font-size:0.7rem;color:var(--muted);">IT Sem II • 6 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">2480 XP</span></div>
+    <div class="lb-row"><span style="color:var(--muted);font-weight:900;width:24px;">6</span><div class="lb-av" style="background:linear-gradient(135deg,#ff4fa3,#ff6d00);">K</div><div><div style="font-weight:800;font-size:0.85rem;">Kunal Mehta</div><div style="font-size:0.7rem;color:var(--muted);">IT • 5 courses</div></div><span class="ms-auto" style="font-weight:800;color:var(--accent);font-family:'Fira Code',monospace;">2100 XP</span></div>
+  </div>
+
+  <!-- SETTINGS -->
+  <div id="settings" class="sec-title">⚙️ Settings</div>
+  <div style="max-width:520px;" class="mb-5">
+    <p style="font-size:0.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;" class="mb-2">Account Info</p>
+    <div class="set-row mb-2"><div><div style="font-weight:700;font-size:0.85rem;">Full Name</div><div style="font-size:0.7rem;color:var(--muted);">Mohammad</div></div></div>
+    <div class="set-row mb-2"><div><div style="font-weight:700;font-size:0.85rem;">Email</div><div style="font-size:0.7rem;color:var(--muted);">mohammad@codemaster.ac.in</div></div></div>
+    <div class="set-row mb-3"><div><div style="font-weight:700;font-size:0.85rem;">Department</div><div style="font-size:0.7rem;color:var(--muted);">Information Technology — IT Sem II</div></div></div>
+    <p style="font-size:0.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;" class="mb-2">Preferences</p>
+    <div class="set-row"><div><div style="font-weight:700;font-size:0.85rem;">Email Notifications</div><div style="font-size:0.7rem;color:var(--muted);">Get deadline reminders</div></div><input type="checkbox" checked></div>
+    <div class="set-row"><div><div style="font-weight:700;font-size:0.85rem;">Dark Mode</div><div style="font-size:0.7rem;color:var(--muted);">Toggle light / dark theme</div></div><input type="checkbox" id="darkToggle" checked onchange="document.body.classList.toggle('light-mode')"></div>
+    <div class="set-row"><div><div style="font-weight:700;font-size:0.85rem;">Auto-play Videos</div><div style="font-size:0.7rem;color:var(--muted);">Play next lecture automatically</div></div><input type="checkbox"></div>
+    <div class="set-row"><div><div style="font-weight:700;font-size:0.85rem;">Show Progress Bars</div><div style="font-size:0.7rem;color:var(--muted);">Display on dashboard</div></div><input type="checkbox" checked></div>
+    <br>
+    <button class="btn btn-glow mt-2">💾 Save Settings</button>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="logo-text mb-3" style="font-size:1.2rem;">Code<span>Master</span></div>
+        <p style="font-size:0.8rem;color:#9ca3af;line-height:1.7;">India's leading online coding platform. Expert-led courses, live classes &amp; real projects — from beginner to pro.</p>
+        <div class="mt-3">
+          <a class="social-btn" href="#">▶</a>
+          <a class="social-btn" href="#">✈</a>
+          <a class="social-btn" href="#">📸</a>
+          <a class="social-btn" href="#">💼</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h6 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);" class="mb-3">Quick Links</h6>
+        <a href="#dashboard" class="footer-link">🏠 Dashboard</a>
+        <a href="#courses" class="footer-link">📚 Courses</a>
+        <a href="#videos" class="footer-link">🎬 Videos</a>
+        <a href="#assignments" class="footer-link">📝 Assignments</a>
+        <a href="#leaderboard" class="footer-link">🏆 Leaderboard</a>
+      </div>
+      <div class="col-md-2">
+        <h6 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);" class="mb-3">Courses</h6>
+        <a href="#courses" class="footer-link">🌐 HTML &amp; CSS</a>
+        <a href="#courses" class="footer-link">⚡ JavaScript</a>
+        <a href="#courses" class="footer-link">🐍 Python</a>
+        <a href="#courses" class="footer-link">⚛️ React.js</a>
+        <a href="#courses" class="footer-link">🗄️ SQL</a>
+      </div>
+      <div class="col-md-4">
+        <h6 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);" class="mb-3">Contact Us</h6>
+        <div class="contact-item"><div class="c-icon">📧</div>support@codemaster.ac.in</div>
+        <div class="contact-item"><div class="c-icon">📧</div>admissions@codemaster.ac.in</div>
+        <div class="contact-item"><div class="c-icon">📞</div>+91 98765 43210</div>
+        <div class="contact-item"><div class="c-icon">📍</div>S.B. Jain Institute, Nagpur — 440024</div>
+        <div class="contact-item"><div class="c-icon">🕐</div>Mon–Sat, 9 AM – 6 PM</div>
+      </div>
+    </div>
+    <div class="pt-3 d-flex justify-content-between flex-wrap gap-2" style="border-top:1px solid var(--border);font-size:0.75rem;color:var(--muted);">
+      <span>© 2025 <strong style="color:var(--accent);">CodeMaster Academy</strong> — S.B. Jain Institute, Nagpur | IT Sem II | N-VSCCS102P</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
